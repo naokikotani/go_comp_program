@@ -14,6 +14,15 @@ var count int
 	}
 
 	// if文
+	if i % b == 0 && i % c == 0 {
+			fmt.Println("AB")
+	} else if i % b == 0 {
+			fmt.Println("A")
+	} else if i % c == 0 {
+			fmt.Println("B")
+	} else {
+			fmt.Println("N")
+	}
 
 	// case文
 	a := "2"
@@ -24,6 +33,12 @@ var count int
 		fmt.Println("2つめ") // 2つめが出力される
 	default:
 		fmt.Println("3つめ")
-}
+	}
+
+	// 四則演算
+	// 剰余
+	i % b // i割るbの余り
+
+	
 
 
