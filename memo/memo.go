@@ -6,11 +6,28 @@
 // 2
 // 3
 // 4
-var count int
+	var count int
 	fmt.Scan(&count)
 	inputs := make([]int, count)
 	for i := 0; i < count; i++ {
 		fmt.Scan(&inputs[i]) // => [1, 2, 3, 4]
+	}
+
+	// 配列
+	arr := [...] string{"Golang", "Java"}
+	fmt.Println(arr[0], arr[1]) //=> Golange Java
+	fmt.Println(arr) //=> [Golange Java]
+	// 配列について
+	// https://ashitani.jp/golangtips/tips_slice.html
+
+	//配列の中に特定の文字列が含まれるかを返す
+	func arrayContains(arr []string, str string) bool{
+		for _, v := range arr{
+			if v == str{
+				return true
+			}
+		}
+		return false
 	}
 
 	// if文
@@ -39,6 +56,6 @@ var count int
 	// 剰余
 	i % b // i割るbの余り
 
-	
+
 
 
