@@ -20,12 +20,37 @@
 	// 配列について
 	// https://ashitani.jp/golangtips/tips_slice.html
 
-	//配列の中に特定の文字列が含まれるかを返す
-	func arrayContains(arr []string, str string) bool{
-		for _, v := range arr{
-			if v == str{
-				return true
-			}
+	//配列の要素を検索する
+	func contains(target interface{}, list interface{}) (bool) {
+		switch list.(type) {
+			default:
+				return false
+			case []int:
+				revert := list.([]int)
+				for _, r := range revert {
+					if target == r {
+						return true
+					}
+				}
+				return false
+
+			case []uint64:
+				revert := list.([]uint64)
+				for _, r := range revert {
+					if target == r {
+						return true
+					}
+				}
+				return false
+
+			case []string:
+				revert := list.([]string)
+				for _, r := range revert {
+					if target == r {
+						return true
+					}
+				}
+				return false
 		}
 		return false
 	}
