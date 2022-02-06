@@ -1,4 +1,11 @@
 // 標準入力
+// str
+	var str string
+	fmt.Scan(&str)
+
+// int
+  var num int
+	fmt.Scanf("%d", &num)
 
 // 複数行の標準入力
 // 入力例
@@ -54,6 +61,12 @@
 		}
 		return false
 	}
+
+	// 日付の取り扱い
+	// https://qiita.com/tez/items/1fdcbd9e2b6b575b6725
+
+	// str → int, int → str
+	// https://qiita.com/quicksort/items/c9522793a941edf074fd
 
 	// if文
 	if i % b == 0 && i % c == 0 {
