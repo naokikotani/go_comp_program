@@ -2,6 +2,7 @@
 
 package main
 import "fmt"
+
 func main() {
   var xc, yc, r_1, r_2 int
 	fmt.Scanf("%d %d %d %d", &xc, &yc, &r_1, &r_2)
