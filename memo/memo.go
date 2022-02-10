@@ -7,6 +7,13 @@
   var num int
 	fmt.Scanf("%d", &num)
 
+	// 絶対値
+	import "math"
+	var H int
+	fmt.Scanf("%d", &H)
+	h := float64(H)
+	math.Abs(H)
+
 // 複数行の標準入力
 // 入力例
 // 1
