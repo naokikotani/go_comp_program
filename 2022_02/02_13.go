@@ -105,3 +105,35 @@ func main() {
 	}
 	fmt.Println(result)
 }
+
+
+
+
+package main
+import "fmt"
+
+func main() {
+	var (
+		a int
+		b int
+		c int
+		x int
+		result int = 0
+	)
+
+	fmt.Scanf("%d", &a)
+	fmt.Scanf("%d", &b)
+	fmt.Scanf("%d", &c)
+	fmt.Scanf("%d", &x)
+
+	for num_a := 0; num_a < a + 1; num_a++ {
+		for num_b := 0; num_b < b + 1; num_b++ {
+			for num_c := 0; num_c < c + 1; num_c++ {
+				if num_a * 500 + num_b * 100 + num_c * 50 == x {
+					result++
+				}
+			}
+		}
+	}
+	fmt.Println(result)
+}
